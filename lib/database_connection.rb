@@ -25,7 +25,6 @@ class DatabaseConnection
       database_name = 'music_library'
     end
   @connection = PG.connect({ host: '127.0.0.1', dbname: database_name })
-end
     if ENV['ENV'] == 'test'
       database_name = 'music_library_test'
     else
